@@ -1,6 +1,4 @@
-# 1600final
-
-[The Complete Basics of GitHub Flavored Markdown](1600finalP.md)
+# [The Complete Basics of GitHub Flavored Markdown](1600finalP.md)
 
 by: Dominick Randazzo
 
