@@ -158,6 +158,12 @@ And here it is in action.
 
 ## Highlighting
 
+You can highlight sections of text by using a back-tick before and after the text. This will make it stand out.
+
+Here is the syntax for text highlighting.
+
+##### The second half `is highlighted .`
+
 Highlighting code applies the color coding that coding languages use within markdown. Markdown doesn't innately support code highlighting; however, most of the programs that run markdown, such as GitHub, does support code highlighting. The render program you use also haas to support the language that you are trying to highlight. I will be using javascript and python in this example as GitHub supports those.  
 Highlighted lines of code are started by using three back-ticks ```, you then signify the language you are using immediatly after the back-ticks, and finally you signal the end of the highlighting by also using three back-ticks ``` at the end.
 
@@ -194,23 +200,109 @@ Nothing is being highlighted here because there is no coding language recognized
 
 ## Tables
 
+Markdown itself does not support the ability to create tables. Just like highlighting, renders that use versions of markdown with extensions allow for tables. GitHub allows the implementation of tables.
+
+Tables have the most unique syntax out of anything we have covered so far. I feel it would be easier to show the syntax and then explain the rules behind what is happening.
+
+```
+| Table | Like | This |
+| --- | :---: | ---: |
+| Left | Middle | Right |
+```
+Lets dissect what is happening here. Each column is created by entering in this slash | then the title of the column followed by another slash |. The next line will look the same except it should contain three dashes --- with a colon either after the last dash or before and after the last dash. This formats for how the column is aligned. Just three dashes --- is left aligned, a colon then three dashes ending with a colon :---: center aligns the column, and finally three dashes ending in a colon ---: right aligns the column. Every new line after that extends the column down by one for more information. You create additional rows by entering your text followed by a slash |. Every additional row has to have the alignment column beneath it once and it can be different from other rows. The dash | ending each line is optional but I recommend inserting it regardless so it looks nicer and will be less susceptible to errors. You can include headers for an entire line row by entering the # at the start of the line but that can get very messy very quickly. Finally adding emphasis and highlighting is allowed and won't mess up how the tables look like headers can.
+
+Here is what tables look like in action.
+
+| This | Is | A | Table |
+| --- | --- | ---: | :---: |
+| Left | Left | Right | Center |
+| *Italic* | **Bold** | ~Strikethrough~ | `Highlighted` |
+
 ---
 
 ## Blockquotes
+
+Blockquotes are typically used to signify text like email or sms, direct quotes, or text out of a book.  
+You start blockquotes in a similar way to headers. Instead of hashtags you use one > greater than symbol at the start of the line.
+
+Blockquote syntax
+
+```
+> This is how you create a blockquote,
+```
+
+This is what blockquotes look like in action.
+
+> This is how you create a blockquote.
+
+Blockquotes can be nested within each other by inserting an extra greater than sign > for each new nested line.
+
+Here is the nested blockquote syntax
+
+```
+> This is the first line
+>> The second line
+>>> The third line
+```
+
+Here is nested blockquotes in action
+
+> This is the first line
+>> The second line
+>>> The third line
 
 ---
 
 ## Inline HTML
 
+You can also include HTML in your markdown if your render allows for html.
+
+I won't go over the syntax since this isn't a HTML tutorial but I will show you what the final product looks like.
+
+<dl>
+  <dt>Definition list</dt>
+  <dd>Is something people use sometimes.</dd>
+
+  <dt>Markdown in HTML</dt>
+  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+</dl>
+
 ---
 
 ## Horizontal Rules
+
+Horizontal rules are the long lines I have been using the seperate the different sections in this tutorial. They are very easy to incorporate. On an empty line you just instert three either asterisks, hyphens, or underscores.
+
+This is the syntax for all horizontal rules.
+
+```
+---
+or
+___
+or
+***
+```
+
+This is what they look like in the same order. (Hint they all look the same)
+
+---
+___
+***
 
 ---
 
 ## Line Breaks
 
+Line breaks are how you seperate out your lines of text in markdown. There are two ways to do this. A hard line break is when you enter in an empty line inbetween text. This breaks text apart like a paragraph. A soft break occurs when you enter two spaces at the end of your line. This makes the next line directly following appear below the line like a trailing sentence.
+
+I can't show the syntax for obvious reasons but what I did for this sentence was a hard break.
+And this sentence used a soft break.
+
 ---
 
 ## Videos
 
+This is mainly useful for Youtube videos. This uses the href command from HTML which since that isn't markdown specific I will not explain the syntax. This is to merely show you can do this is the render allows for href.
+
+<a href="https://www.youtube.com/watch?v=nxoe5DjDd74" target="_blank"><img src="https://i.ytimg.com/vi/nxoe5DjDd74/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDEum97JaeRLRqpMF-X7sNnXVOjhA" 
+alt="Fonky Monky Friday" width="300" height="300" border="30" /></a>
