@@ -112,7 +112,7 @@ This is the inline links syntax.
 
 And here it is in action.
 
-[This should take you to youtube.](www.youtube.com)
+[This should take you to youtube.](https://www.youtube.com/)
 
 Reference links work very similar. Instead of having the text go right to the link, it directs to a seperate reference that in turn directs to a link. This is useful if you are planning on creating links en masse that direct to the same website, that way you will end up not having to enter the entire url everytime. The reference links do not have to appear immediately afterwards. As long as it is in the document it will work.
 
