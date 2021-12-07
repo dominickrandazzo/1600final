@@ -159,30 +159,36 @@ And here it is in action.
 ## Highlighting
 
 Highlighting code applies the color coding that coding languages use within markdown. Markdown doesn't innately support code highlighting; however, most of the programs that run markdown, such as GitHub, does support code highlighting. The render program you use also haas to support the language that you are trying to highlight. I will be using javascript and python in this example as GitHub supports those.  
-Highlighted lines of code are started by using three back-ticks ``` and you signal the end of the highlighting by also using three back-ticks ``` at the end.
+Highlighted lines of code are started by using three back-ticks ```, you then signify the language you are using immediatly after the back-ticks, and finally you signal the end of the highlighting by also using three back-ticks ``` at the end.
 
 This is what the syntax looks like for highlighting code, minus the period after the first back-tick in the examples.
 
-`.``javascript
-var s = "Notice the var is red and this text is blue.";
-alert(s);```
+##### ```javascript  
+##### var s = "Notice the var and this text are different colors.";
+##### alert(s);
+##### ```
  
-`.``python
-s = "Notice the print is red and this text is blue."
-print s```
+##### ```python
+##### s = "Notice the print and this text are different colors."
+##### print s
+##### ```
 
 This is what is what highlighting looks like in action.
 
 ```javascript
 var s = "Notice the var and this text are different colors.";
-alert(s);```
+alert(s);
+```
  
 ```python
 s = "Notice the print and this text are different colors."
-print s```
-
-```You can't tell from viewing this is in a renderer, but this whole block of text is using the highlighting syntax.
-Nothing is being highlighted here because there is no coding language recognized.```
+print s
+```
+ 
+```
+You can't tell from viewing this is in a renderer, but this whole block of text is using the highlighting syntax.
+Nothing is being highlighted here because there is no coding language recognized.
+```
 
 ---
 
